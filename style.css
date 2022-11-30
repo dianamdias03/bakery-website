@@ -1,0 +1,118 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.cdnfonts.com/css/outfit');
+*{margin: 0; padding: 0;}
+
+.main-header{
+    background-color: #F7F9FA;
+    height: 180vh;
+}
+
+.header{
+    display: flex;
+    height: 120px;
+}
+
+.menu{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    list-style-type: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: #000000
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    text-align: left;
+    padding-right: 30%;
+}
+
+.main-body{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-main{
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.img-main{
+    height: calc(100vh - 120px);
+    background-image: url('img/img_main.png');
+    background-repeat: no-repeat, repeat;
+}
+
+.title-main{
+    font-family: 'Montserrat';
+    flex-wrap: wrap;
+    font-size: 64px;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.subtitle-main{
+    font-family: 'Outfit';
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.button{
+    padding: 1em 5rem 1rem 5rem;
+    margin-top: 5%;
+    border: none;
+    border-radius: 30px;
+    background-color: #EC2847;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button p{
+    color: #F7F9FA;
+    font-family: 'Outfit';
+    font-size: 14px;
+    display: flex;
+    
+}
+
+.catalog h1{
+    font-family: 'Montserrat';
+    font-weight: normal;
+    flex-wrap: wrap;
+    font-size: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-catalog{
+    padding: 20px;
+    width: 300px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog button{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: grid;
+    justify-content: center;
+}
