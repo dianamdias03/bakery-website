@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="img/icon.png">
-        <script src="javascript.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type = "text/javascript" src="javascript.js"></script>  
         <title>Bakery Gold Grain</title>
     </head>
     <body>
@@ -40,31 +43,31 @@
             <div class="contact">
                 <h1 class="title-secondary">Peça seu<br>orçamento</h1>
                 <div class="box-contact">
-                    <form action="">
+                    <form id="contatoForm" method="get" action="mailto:dianamdias03@mail.com" target="_blank">
                         <br>
                         <div class="input-box">
                             <label for="input-name">Nome:</label>
-                            <input type="text">
+                            <input type="text" name="name">
                         </div>
 
                         <div class="input-box">
                             <label for="input-name">Telefone:</label>
-                            <input type="text">
+                            <input type="text" name="phone">
                         </div>
 
                         
                         <div class="input-box">
-                            <label for="input-name">Email:</label>
-                            <input type="text">
+                            <label for="input-name" name="email">Email:</label>
+                            <input name="email" type="text">
                         </div>
 
                         <div class="text-area-box">
                             <label for="">Mensagem:</label>
-                            <textarea class="message-textarea" rows="6" cols="50"></textarea>
+                            <textarea name="message" class="message-textarea" rows="6" cols="50"></textarea>
                         </div>
                     </form>
-                    <button type="submit" class="button"><p>Enviar</p></button>
 
+                    <button class="button" onclick="sendMessage()"><p>Enviar</p></button>
                 </div>
             </div>
         </main>
