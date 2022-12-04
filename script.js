@@ -11,7 +11,7 @@ function sendMessage(){
         document.querySelector('input[name=name]').value='';
         document.querySelector('input[name=phone]').value='';
         document.querySelector('input[name=email]').value='';
-        document.querySelector('input[name=message]').value='';
+        document.querySelector('textarea[name=message]').value='';
     }, (err) => {
         console.log("Erro: " + err.message)
     })
