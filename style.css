@@ -202,9 +202,12 @@
     margin-bottom: 32px;
 }
 
+.footer-contato{
+    padding-left: 20px;
+}
+
 .footer-contato ul {
     margin-bottom: 32px;
-    padding-left: 30px;
 }
 
 .footer li {
