@@ -37,7 +37,7 @@ function reveal(){
 
 window.addEventListener("scroll", reveal);
 
-window.addEventListener("mouseout", clickOutsideMenu);
+//window.addEventListener("mouseout", clickOutsideMenu);
 
 function menuShow(){
     var ul = document.querySelector('.menu');
