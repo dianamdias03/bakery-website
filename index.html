@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style/index.css">
         <link rel="shortcut icon" href="img/icon.png">
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
         </script>
-        <script type = "text/javascript" src="script.js"></script>  
+        <script type = "text/javascript" src="script/index.js"></script>  
         <title>Bakery Gold Grain</title>
     </head>
     <body>
@@ -18,16 +18,16 @@
                 <img src="img/logo.png" class="logo">
                 <img onclick="menuShow()" src="img/menu.png" class="menu-responsive" alt="Menu">
                 <ul class="menu">
-                    <li><a href="">História</a></li>
-                    <li><a href="">Catálogo</a></li>
-                    <li><a href="">Orçamento</a></li>
+                    <li><a href="./pages/about.html">História</a></li>
+                    <li><a href="./pages/catalog.html">Catálogo</a></li>
+                    <li><a onclick="revealContact()">Orçamento</a></li>
                 </ul>
             </div>
             <div class="main-body">
                 <div class="info-main">
                     <h1 class="title-main">Gold Grain<br>Bakery</h1>
                     <p class="subtitle-main">Tasty & Fresh</p>
-                    <button class="button"><p>Conheça</p></button>
+                    <button class="button" onclick="window.location.href = './pages/about.html'"><p>Conheça</p></button>
                 </div>
                 <div class="img-main"></div>
             </div>
@@ -39,9 +39,9 @@
                     <div><img class="img-middle" src="img/catalog2.png"><img src="img/catalog3.png"></div>
                     <div><img src="img/catalog4.png"></div>
                 </div>
-                <button class="button"><p>Ver mais</p></button>
+                <button class="button" onclick="window.location.href = './pages/catalog.html'"><p>Ver mais</p></button>
             </div>
-            <div class="contact reveal">
+            <div class="contact reveal" id="contact">
                 <h1 class="title-secondary">Peça seu<br>orçamento</h1>
                 <div class="box-contact">
                     <form id="contatoForm" method="get" action="mailto:dianamdias03@mail.com" target="_blank">

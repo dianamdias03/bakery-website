@@ -1,0 +1,36 @@
+.main-body{
+    height: calc(100vh - 120px); 
+    display: flex;
+    max-width: 60%;
+    justify-content: center;
+}
+
+.main-body img{
+    float: left;
+    max-width: 320px;
+    max-height: 400px;
+}
+
+.about-text{
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Outfit';
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.about h1{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media (max-width: 930px){
+    .main-body img{
+        display: none;
+    }
+
+    .about h1{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}

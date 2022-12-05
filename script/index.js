@@ -37,7 +37,7 @@ function reveal(){
 
 window.addEventListener("scroll", reveal);
 
-//window.addEventListener("touchmove", reveal);
+window.addEventListener("mouseout", clickOutsideMenu);
 
 function menuShow(){
     var ul = document.querySelector('.menu');
@@ -47,4 +47,14 @@ function menuShow(){
     }else{
         ul.classList.add('open');
     }
+}
+
+function revealContact(){
+    console.log(document.getElementById('contact'))
+    document.getElementById('contact').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
+
+function clickOutsideMenu(){
+    var ul = document.querySelector('.menu');
+    ul.classList.remove('open');
 }
