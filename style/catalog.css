@@ -1,3 +1,60 @@
-.main-body{
-    height: calc(100vh - 120px);
+.catalog-page{
+    padding-bottom: 50px;
 }
+
+.catalog-page-grid{
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 3px;
+}
+
+.catalog-page-grid img{
+    margin: 10px;
+}
+
+.catalog-page-grid img:hover{
+    //cursor: zoom-in;
+    box-shadow: 3px 3px 5px 6px #ccc;
+
+}
+
+.catalog-page button{
+    display: flex;
+    margin: auto;
+    height: auto;
+    align-items: center;
+}
+
+#modal_img{
+    width: 25vw;
+}
+
+/*.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+}
+
+.modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#btn_closed{
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border: solid 1px #fff;
+}*/

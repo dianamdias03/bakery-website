@@ -27,6 +27,7 @@
 @media (max-width: 930px){
     .main-body img{
         display: none;
+        height: auto 
     }
 
     .about h1{
