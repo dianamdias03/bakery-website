@@ -18,7 +18,7 @@
 }
 
 .catalog-page-grid img:hover{
-    //cursor: zoom-in;
+    /*cursor: zoom-in;*/
     box-shadow: 3px 3px 5px 6px #ccc;
 
 }
@@ -32,6 +32,12 @@
 
 #modal_img{
     width: 25vw;
+}
+
+@media (max-width: 930px){
+    .catalog-page-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /*.modal{
